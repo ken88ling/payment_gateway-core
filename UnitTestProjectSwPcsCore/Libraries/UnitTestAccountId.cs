@@ -7,10 +7,10 @@ using System.Collections.Generic;
 
 using sw_pcs_core.Libraries;
 
-namespace UnitTestProjectSwPcsCore
+namespace UnitTestProjectSwPcsCore.Libraries
 {
     [TestClass]
-    public class UnitTestLibrary
+    public class UnitTestAccountId
     {
         [TestMethod]
         public void TestAccountId()

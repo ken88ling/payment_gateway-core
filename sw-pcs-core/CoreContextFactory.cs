@@ -13,7 +13,7 @@ namespace sw_pcs_core
         public CoreContext CreateDbContext(string[] args)
         {
             var _optionsBuilder = new DbContextOptionsBuilder<CoreContext>();
-            _optionsBuilder.UseSqlite("Data Source=test.db");
+            _optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=SwPCSCoreDB;Trusted_Connection=True;Application Name=PaymentCardSystem;");
 
             return new CoreContext(_optionsBuilder.Options);            
         }
