@@ -14,6 +14,7 @@ namespace sw_pcs_core
         {
             var _optionsBuilder = new DbContextOptionsBuilder<CoreContext>();
             
+            _optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=SwPCSCoreDB;Trusted_Connection=True;Application Name=PaymentCardSystem;");
 
             return new CoreContext(_optionsBuilder.Options);            
         }
