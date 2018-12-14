@@ -13,7 +13,7 @@ namespace sw_pcs_core
         public CoreContext CreateDbContext(string[] args)
         {
             var _optionsBuilder = new DbContextOptionsBuilder<CoreContext>();
-            _optionsBuilder.UseSqlite("Data Source=test.db");
+            
 
             return new CoreContext(_optionsBuilder.Options);            
         }

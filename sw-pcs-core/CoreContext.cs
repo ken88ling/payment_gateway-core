@@ -10,11 +10,12 @@ namespace sw_pcs_core
 {
     public class CoreContext : DbContext 
     {
+        public DbSet<User> User { get; set; }
+
         public CoreContext (DbContextOptions<CoreContext> options) : base(options)
         {
 
         }
-
-        DbSet<User> User { get; set; }
+        
     }
 }
